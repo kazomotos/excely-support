@@ -124,6 +124,15 @@ def main() -> None:
     assert "@media (max-width: 660px)" in css, "Mobile Breakpoint fehlt"
     assert ":focus-visible" in css, "Sichtbarer Tastaturfokus fehlt"
     assert "prefers-reduced-motion" in css, "Reduced-Motion-Regel fehlt"
+    assert css.count("width: 100vw;") >= 2, (
+        "Dunkle Sektionen müssen den begrenzten Hauptcontainer verlassen"
+    )
+    assert "aspect-ratio: 1180 / 640;" in css, (
+        "Desktop-Screenshot-Raster benötigt ein stabiles Seitenverhältnis"
+    )
+    assert "grid-column: 3;" in css, (
+        "iPhone-Screenshot muss explizit in der dritten Spalte liegen"
+    )
     brand_rule = css.split(".brand {", maxsplit=1)[1].split("}", maxsplit=1)[0]
     assert "font-weight: bold;" in brand_rule, (
         "Tablivio-Wortmarke muss fett gesetzt sein"
