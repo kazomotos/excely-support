@@ -1,18 +1,19 @@
-# Excely Website
+# Tablivio Website
 
-Statische Marketing-, Support- und Datenschutzwebsite für Excely auf macOS und
+Statische Marketing-, Support- und Datenschutzwebsite für Tablivio auf macOS und
 iOS. Die Seite richtet sich an Teams und Unternehmen, die wiederkehrende
 Eingaben in Excel-Arbeitsmappen strukturieren möchten.
 
 ## Inhalt
 
-- `index.html`: Produktseite mit Vorteilen, Funktionsweise, Voraussetzungen
-  und Kontaktmöglichkeit
+- `index.html`: Supportseite mit Soforthilfe, Produktüberblick, FAQ,
+  Voraussetzungen und Kontaktmöglichkeit
 - `datenschutz.html`: gemeinsame Datenschutzerklärung für Website und App
 - `styles.css`: responsives Layout ohne externe Schriftarten, Skripte oder
   Tracking
-- `assets/screenshots`: weboptimierte, echte Screenshots der Excely-App
-- `assets/excely-mark.png`: gemeinsames Markenzeichen der Website und Apps
+- `assets/screenshots`: weboptimierte, echte Screenshots der Tablivio-App
+- `assets/tablivio-mark.png`: gemeinsames Markenzeichen der Website und Apps
+- `assets/tablivio-support-social.png`: Vorschaugrafik für geteilte Links
 - `scripts/validate-site.py`: lokale Struktur-, Link- und Datenschutzprüfung
 
 ## Lokal prüfen
@@ -31,8 +32,8 @@ Danach sind die Seiten unter `http://localhost:8000/` und
 2. Unter **Pages** bei *Build and deployment* **Deploy from a branch** wählen.
 3. Branch `main` und Ordner `/(root)` auswählen und speichern.
 4. Nach dem Deployment lauten die URLs:
-   - Marketing und Support: `https://kazomotos.github.io/excely-support/`
-   - Datenschutz: `https://kazomotos.github.io/excely-support/datenschutz.html`
+  - Support: `https://kazomotos.github.io/tablivio-support/`
+  - Datenschutz: `https://kazomotos.github.io/tablivio-support/datenschutz.html`
 
 Die Datenschutzerklärung beschreibt die derzeit dokumentierten Funktionen und
 Dienste. Änderungen an Hosting, Analyse, App-Funktionen oder Datenflüssen müssen

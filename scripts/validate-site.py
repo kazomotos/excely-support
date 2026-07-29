@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the static Excely website without third-party dependencies."""
+"""Validate the static Tablivio website without third-party dependencies."""
 
 from __future__ import annotations
 
@@ -100,13 +100,38 @@ def main() -> None:
     for term in required_privacy_terms:
         assert term in privacy_text, f"Datenschutzangabe fehlt: {term}"
 
+    support_text = (ROOT / "index.html").read_text(encoding="utf-8")
+    required_support_terms = (
+        'id="hilfe"',
+        'id="funktionen"',
+        'id="faq"',
+        "Microsoft-365-Geschäfts- und Schulkonten",
+        "Keine sensiblen Dateien senden",
+        "Supportanfrage öffnen",
+        "https://kazomotos.github.io/tablivio-support/",
+        "assets/tablivio-support-social.png",
+    )
+    for term in required_support_terms:
+        assert term in support_text, f"Supportangabe fehlt: {term}"
+
+    for page in PAGES:
+        page_text = page.read_text(encoding="utf-8")
+        assert ">Excely<" not in page_text, (
+            f"{page.name}: sichtbarer alter Produktname gefunden"
+        )
+
     css = (ROOT / "styles.css").read_text(encoding="utf-8")
     assert "@media (max-width: 660px)" in css, "Mobile Breakpoint fehlt"
     assert ":focus-visible" in css, "Sichtbarer Tastaturfokus fehlt"
     assert "prefers-reduced-motion" in css, "Reduced-Motion-Regel fehlt"
+    brand_rule = css.split(".brand {", maxsplit=1)[1].split("}", maxsplit=1)[0]
+    assert "font-weight: bold;" in brand_rule, (
+        "Tablivio-Wortmarke muss fett gesetzt sein"
+    )
 
     required_assets = (
-        ROOT / "assets" / "excely-mark.png",
+        ROOT / "assets" / "tablivio-mark.png",
+        ROOT / "assets" / "tablivio-support-social.png",
         ROOT / "assets" / "screenshots" / "timer-macos.webp",
         ROOT / "assets" / "screenshots" / "microsoft-365-macos.webp",
         ROOT / "assets" / "screenshots" / "filter-macos.webp",
