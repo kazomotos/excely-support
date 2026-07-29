@@ -6,8 +6,9 @@ Eingaben in Excel-Arbeitsmappen strukturieren möchten.
 
 ## Inhalt
 
-- `index.html`: Supportseite mit Soforthilfe, Produktüberblick, FAQ,
-  Voraussetzungen und Kontaktmöglichkeit
+- `index.html`: Marketingseite mit Produktnutzen, Funktionen, Voraussetzungen
+  und Kontaktmöglichkeit
+- `support.html`: Supportseite mit Soforthilfe, FAQ und persönlichem Kontakt
 - `datenschutz.html`: gemeinsame Datenschutzerklärung für Website und App
 - `styles.css`: responsives Layout ohne externe Schriftarten, Skripte oder
   Tracking

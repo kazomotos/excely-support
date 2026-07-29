@@ -9,7 +9,11 @@ from urllib.parse import urlparse
 
 
 ROOT = Path(__file__).resolve().parent.parent
-PAGES = (ROOT / "index.html", ROOT / "datenschutz.html")
+PAGES = (
+    ROOT / "index.html",
+    ROOT / "support.html",
+    ROOT / "datenschutz.html",
+)
 
 
 class SiteParser(HTMLParser):
@@ -100,7 +104,19 @@ def main() -> None:
     for term in required_privacy_terms:
         assert term in privacy_text, f"Datenschutzangabe fehlt: {term}"
 
-    support_text = (ROOT / "index.html").read_text(encoding="utf-8")
+    marketing_text = (ROOT / "index.html").read_text(encoding="utf-8")
+    required_marketing_terms = (
+        'id="vorteile"',
+        'id="funktionen"',
+        'id="sicherheit"',
+        'id="ablauf"',
+        "Weniger Excel-Chaos.",
+        'href="support.html"',
+    )
+    for term in required_marketing_terms:
+        assert term in marketing_text, f"Marketingangabe fehlt: {term}"
+
+    support_text = (ROOT / "support.html").read_text(encoding="utf-8")
     required_support_terms = (
         'id="hilfe"',
         'id="funktionen"',
