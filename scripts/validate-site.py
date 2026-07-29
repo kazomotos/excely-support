@@ -93,7 +93,8 @@ def main() -> None:
         "Eichenstraße 1",
         "GitHub Pages",
         "Microsoft Graph",
-        "macOS-Schlüsselbund",
+        "macOS und iOS",
+        "Apple-Schlüsselbund",
         "Bayerische Landesamt für Datenschutzaufsicht",
     )
     for term in required_privacy_terms:
@@ -103,6 +104,20 @@ def main() -> None:
     assert "@media (max-width: 660px)" in css, "Mobile Breakpoint fehlt"
     assert ":focus-visible" in css, "Sichtbarer Tastaturfokus fehlt"
     assert "prefers-reduced-motion" in css, "Reduced-Motion-Regel fehlt"
+
+    required_assets = (
+        ROOT / "assets" / "excely-mark.png",
+        ROOT / "assets" / "screenshots" / "timer-macos.webp",
+        ROOT / "assets" / "screenshots" / "microsoft-365-macos.webp",
+        ROOT / "assets" / "screenshots" / "filter-macos.webp",
+        ROOT / "assets" / "screenshots" / "smart-fill-macos.webp",
+        ROOT / "assets" / "screenshots" / "entry-ios.webp",
+        ROOT / "favicon.png",
+    )
+    for asset in required_assets:
+        assert asset.is_file() and asset.stat().st_size > 0, (
+            f"Bilddatei fehlt oder ist leer: {asset.relative_to(ROOT)}"
+        )
 
     print(f"OK: {len(PAGES)} Seiten, lokale Links und Pflichtangaben geprüft.")
 

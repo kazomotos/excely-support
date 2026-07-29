@@ -6,6 +6,7 @@
     <meta name="description" content="Datenschutzerklärung für die Excely-App und die Excely-Website.">
     <meta name="theme-color" content="#f4f6fb">
     <title>Excely – Datenschutz</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -13,7 +14,7 @@
 
     <header class="site-header">
       <a class="brand" href="./" aria-label="Excely Startseite">
-        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <img class="brand-mark" src="assets/excely-mark.png" alt="" width="32" height="32">
         <span>Excely</span>
       </a>
       <nav aria-label="Hauptnavigation">
@@ -74,34 +75,34 @@
           <section id="app">
             <h2>3. Datenverarbeitung in der Excely-App</h2>
             <h3>Keine Datenerhebung durch den Entwickler</h3>
-            <p>Excely ist eine macOS-App zur Eingabe von Daten in Excel-Arbeitsmappen. Der Entwickler betreibt für die App keinen eigenen Server und erhält aus der App keine personenbezogenen Daten, Nutzungsdaten oder Analysedaten.</p>
+            <p>Excely ist eine App für macOS und iOS zur Eingabe von Daten in Excel-Arbeitsmappen. Der Entwickler betreibt für die App keinen eigenen Server und erhält aus der App keine personenbezogenen Daten, Nutzungsdaten oder Analysedaten.</p>
 
             <h3>Lokale Daten</h3>
-            <p>Profile, Einstellungen und lokale Sicherungskopien werden ausschließlich auf dem Mac des Benutzers gespeichert. Bestätigte Einträge werden als Sicherheitsbelege im macOS-Schlüsselbund abgelegt und nicht über iCloud synchronisiert. Die App greift nur auf lokale Dateien zu, die der Benutzer ausdrücklich auswählt.</p>
+            <p>Profile, Einstellungen und bestätigte Einträge werden ausschließlich auf dem jeweiligen Gerät gespeichert. Anmeldenachweise und Sicherheitsbelege liegen im Apple-Schlüsselbund und werden nicht über iCloud synchronisiert. Die Mac-App speichert zusätzlich lokale Sicherungskopien und greift nur auf Dateien zu, die der Benutzer ausdrücklich auswählt.</p>
 
-            <h3>Microsoft Excel</h3>
-            <p>Für Schreibvorgänge in lokalen Arbeitsmappen steuert Excely Microsoft Excel über die von macOS geschützte Automatisierungsberechtigung. Die App führt keine frei eingegebenen Skripte aus und steuert keine anderen Anwendungen.</p>
+            <h3>Lokale Arbeitsmappen auf dem Mac</h3>
+            <p>Für Schreibvorgänge in lokalen Arbeitsmappen steuert die Mac-App Microsoft Excel über die von macOS geschützte Automatisierungsberechtigung. Die App führt keine frei eingegebenen Skripte aus und steuert keine anderen Anwendungen. Die iPhone-App verändert keine lokalen `.xlsx`-Dateien und verwendet ausschließlich Microsoft 365.</p>
           </section>
 
           <section id="microsoft">
             <h2>4. Microsoft 365 und Microsoft Graph</h2>
             <p>Wenn der Benutzer ausdrücklich den Microsoft-365-Modus auswählt, kommuniziert Excely direkt mit Microsoft Graph. Die Anmeldung erfolgt interaktiv über Microsoft mit OAuth 2.0 und PKCE. Excely verwendet die delegierten Berechtigungen <code>User.Read</code> und <code>Files.ReadWrite</code>. Damit handelt die App im Namen des angemeldeten Benutzers und kann auf Dateien zugreifen, auf die dieses Konto zugreifen darf.</p>
-            <p>Verarbeitet werden die zur Anmeldung erforderlichen Kontoangaben sowie die für Auswahl, Anzeige und Aktualisierung benötigten Inhalte und Metadaten der Arbeitsmappe. Die Verarbeitung dient ausschließlich dazu, die vom Benutzer angeforderten Microsoft-365-Funktionen bereitzustellen. Ein erneuerbarer Anmeldenachweis wird im macOS-Schlüsselbund gespeichert. Ein Client-Secret wird weder benötigt noch gespeichert.</p>
+            <p>Verarbeitet werden die zur Anmeldung erforderlichen Kontoangaben sowie die für Auswahl, Anzeige und Aktualisierung benötigten Inhalte und Metadaten der Arbeitsmappe. Die Verarbeitung dient ausschließlich dazu, die vom Benutzer angeforderten Microsoft-365-Funktionen bereitzustellen. Ein erneuerbarer Anmeldenachweis wird im Schlüsselbund des jeweiligen Apple-Geräts gespeichert. Ein Client-Secret wird weder benötigt noch gespeichert.</p>
             <p>Die Datenübertragung erfolgt direkt zwischen der App und Microsoft. Der Entwickler erhält die Inhalte der Arbeitsmappe und die Anmeldenachweise nicht. Für die Verarbeitung durch Microsoft gelten die Vereinbarungen, Datenschutzbestimmungen und Kontoeinstellungen des jeweiligen Microsoft-365-Mandanten. Weitere Informationen enthält die <a href="https://privacy.microsoft.com/de-de/privacystatement" rel="noreferrer">Datenschutzerklärung von Microsoft</a>.</p>
           </section>
 
           <section id="apple">
             <h2>5. Apple Intelligence und Diktat</h2>
             <h3>Apple Intelligence</h3>
-            <p>Optionale Smart-Fill- und Textfunktionen verwenden Apples Foundation-Models-Framework auf unterstützten Macs. Excely sendet die dabei verarbeiteten Texte nicht an einen Server des Entwicklers. Ist Apple Intelligence nicht verfügbar, bleiben alle regulären Eingabe- und Speicherfunktionen nutzbar.</p>
+            <p>Optionale Smart-Fill- und Textfunktionen verwenden Apples Foundation-Models-Framework auf unterstützten Macs und iPhones. Excely sendet die dabei verarbeiteten Texte nicht an einen Server des Entwicklers. Ist Apple Intelligence nicht verfügbar, bleiben alle regulären Eingabe- und Speicherfunktionen nutzbar.</p>
 
-            <h3>Lokale Spracherkennung</h3>
-            <p>Die Diktierfunktion startet ausschließlich nach einer ausdrücklichen Aktion des Benutzers. Excely verlangt lokale Apple-Spracherkennung und bricht ab, wenn diese für die gewählte Sprache nicht verfügbar ist. Es erfolgt keine Cloud-Ausweichlösung. Excely speichert keine Audiodateien. Das erkannte Diktat erscheint nur im sichtbaren Eingabefeld und kann vor der weiteren Verarbeitung bearbeitet oder verworfen werden.</p>
+            <h3>Diktat</h3>
+            <p>Auf dem Mac startet die Excely-Diktierfunktion ausschließlich nach einer ausdrücklichen Aktion des Benutzers. Sie verlangt lokale Apple-Spracherkennung und bricht ab, wenn diese für die gewählte Sprache nicht verfügbar ist. Es erfolgt keine Cloud-Ausweichlösung. Auf dem iPhone gehört die Diktierfunktion zur iOS-Systemtastatur und wird von Apple bereitgestellt. Excely zeichnet auf keiner Plattform Audiodateien auf. Erkannter Text erscheint im sichtbaren Eingabefeld und kann vor der weiteren Verarbeitung bearbeitet oder verworfen werden.</p>
           </section>
 
           <section id="loeschung">
             <h2>6. Speicherung und Löschung</h2>
-            <p>Profile können innerhalb der App gelöscht werden. Lokale Sicherungskopien befinden sich im Application-Support-Ordner von Excely. Anmeldenachweise und Sicherheitsbelege können durch Löschen der entsprechenden Einträge im macOS-Schlüsselbund entfernt werden.</p>
+            <p>Profile können innerhalb der App gelöscht werden. Sicherungskopien der Mac-App befinden sich im Application-Support-Ordner von Excely. Anmeldenachweise und Sicherheitsbelege können durch Löschen der entsprechenden Einträge im Schlüsselbund des Geräts entfernt werden.</p>
             <p>Das Löschen der App löscht nicht automatisch Daten in externen Arbeitsmappen, in Microsoft 365 oder gegebenenfalls separat verbliebene Dateien und Schlüsselbundeinträge. Diese Daten müssen am jeweiligen Speicherort gelöscht werden.</p>
           </section>
 
@@ -121,10 +122,10 @@
 
     <footer>
       <a class="brand footer-brand" href="./" aria-label="Excely Startseite">
-        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <img class="brand-mark" src="assets/excely-mark.png" alt="" width="32" height="32">
         <span>Excely</span>
       </a>
-      <p>Strukturierte Excel-Eingaben für Mac-Teams.</p>
+      <p>Strukturierte Excel-Eingaben auf Mac und iPhone.</p>
       <div class="footer-links">
         <a href="./#support">Kontakt</a>
         <a aria-current="page" href="datenschutz.html">Datenschutz</a>

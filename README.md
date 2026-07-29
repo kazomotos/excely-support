@@ -1,8 +1,8 @@
 # Excely Website
 
-Statische Marketing-, Support- und Datenschutzwebsite für Excely. Die Seite
-richtet sich an Teams und Unternehmen, die wiederkehrende Eingaben in
-Excel-Arbeitsmappen strukturieren möchten.
+Statische Marketing-, Support- und Datenschutzwebsite für Excely auf macOS und
+iOS. Die Seite richtet sich an Teams und Unternehmen, die wiederkehrende
+Eingaben in Excel-Arbeitsmappen strukturieren möchten.
 
 ## Inhalt
 
@@ -11,6 +11,8 @@ Excel-Arbeitsmappen strukturieren möchten.
 - `datenschutz.html`: gemeinsame Datenschutzerklärung für Website und App
 - `styles.css`: responsives Layout ohne externe Schriftarten, Skripte oder
   Tracking
+- `assets/screenshots`: weboptimierte, echte Screenshots der Excely-App
+- `assets/excely-mark.png`: gemeinsames Markenzeichen der Website und Apps
 - `scripts/validate-site.py`: lokale Struktur-, Link- und Datenschutzprüfung
 
 ## Lokal prüfen
