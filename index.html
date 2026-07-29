@@ -3,79 +3,231 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Support und Kurzhilfe für Excely, das kompakte Eingabeformular für Excel.">
-    <title>Excely – Support</title>
+    <meta name="description" content="Excely macht wiederkehrende Excel-Eingaben für Teams schnell, strukturiert und verlässlich – lokal auf dem Mac oder direkt in Microsoft 365.">
+    <meta name="theme-color" content="#f4f6fb">
+    <title>Excely – Strukturierte Excel-Eingaben für Teams</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
     <header class="site-header">
-      <a class="brand" href="./" aria-label="Excely Support Startseite">
+      <a class="brand" href="./" aria-label="Excely Startseite">
         <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
         <span>Excely</span>
       </a>
       <nav aria-label="Hauptnavigation">
-        <a href="#hilfe">Kurzhilfe</a>
-        <a href="datenschutz.html">Datenschutz</a>
+        <a href="#vorteile">Vorteile</a>
+        <a href="#sicherheit">Sicherheit</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#support">Support</a>
       </nav>
+      <a class="header-cta" href="mailto:marc-hager@outlook.com?subject=Excely%20f%C3%BCr%20unser%20Team">Verfügbarkeit anfragen</a>
     </header>
 
-    <main>
+    <main id="inhalt">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">SUPPORT</p>
-          <h1 id="hero-title">Excel-Eingaben.<br><span>Ohne Umwege.</span></h1>
-          <p class="lead">Excely bringt wiederkehrende Dateneingaben aus großen Excel-Arbeitsmappen in ein kompaktes, schnelles Formular.</p>
-          <a class="button" href="mailto:marc-hager@outlook.com?subject=Excely%20Support">Support kontaktieren</a>
+          <p class="eyebrow">EXCEL-EINGABEN FÜR MAC-TEAMS</p>
+          <h1 id="hero-title">Weniger Excel-Chaos.<br><span>Mehr saubere Daten.</span></h1>
+          <p class="lead">Excely verwandelt wiederkehrende Eingaben in ein kompaktes Formular – ohne bestehende Arbeitsmappen oder Microsoft-365-Prozesse zu ersetzen.</p>
+          <div class="hero-actions">
+            <a class="button" href="mailto:marc-hager@outlook.com?subject=Excely%20f%C3%BCr%20unser%20Team">Verfügbarkeit anfragen</a>
+            <a class="text-link" href="#ablauf">So funktioniert Excely <span aria-hidden="true">↓</span></a>
+          </div>
+          <ul class="hero-facts" aria-label="Kurzvorteile">
+            <li>Keine Excely-Cloud</li>
+            <li>Kein Tracking</li>
+            <li>macOS-native</li>
+          </ul>
         </div>
-        <div class="hero-orb" aria-hidden="true">
-          <div class="mini-window">
-            <div class="mini-toolbar"><b></b><b></b><b></b><span>Zeiterfassung</span></div>
-            <div class="mini-content">
-              <strong>Projektzeit</strong>
-              <div class="mini-line wide"></div>
-              <div class="mini-line"></div>
-              <div class="mini-line short"></div>
-              <button>Speichern</button>
+
+        <div class="product-stage" aria-hidden="true">
+          <div class="app-window">
+            <div class="window-toolbar">
+              <span class="traffic-lights" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="profile-name">Projektzeiterfassung</span>
+              <span class="window-icon" aria-hidden="true">•••</span>
             </div>
+            <div class="window-body">
+              <div class="form-heading">
+                <div>
+                  <span class="form-kicker">NEUER EINTRAG</span>
+                  <strong>Projektzeit erfassen</strong>
+                </div>
+                <span class="status-dot">Bereit</span>
+              </div>
+              <div class="mock-field">
+                <span>Projekt</span>
+                <strong>Website-Relaunch</strong>
+              </div>
+              <div class="mock-grid">
+                <div class="mock-field">
+                  <span>Datum</span>
+                  <strong>29.07.2026</strong>
+                </div>
+                <div class="mock-field">
+                  <span>Dauer</span>
+                  <strong>2,50 h</strong>
+                </div>
+              </div>
+              <div class="mock-field tall">
+                <span>Beschreibung</span>
+                <strong>Kundenfeedback eingearbeitet</strong>
+              </div>
+              <div class="mock-footer">
+                <span>4 Felder geprüft</span>
+                <button type="button" tabindex="-1">In Excel speichern</button>
+              </div>
+            </div>
+          </div>
+          <div class="verified-card">
+            <span class="checkmark" aria-hidden="true">✓</span>
+            <div><strong>Eintrag verifiziert</strong><small>Excel-Zeile erfolgreich geprüft</small></div>
           </div>
         </div>
       </section>
 
-      <section class="quick-start" id="hilfe" aria-labelledby="quick-start-title">
-        <p class="eyebrow">KURZHILFE</p>
-        <h2 id="quick-start-title">In drei Schritten zum ersten Eintrag</h2>
-        <div class="steps">
-          <article>
-            <span>1</span>
-            <h3>Profil anlegen</h3>
-            <p>Wähle eine lokale Excel-Datei oder eine Arbeitsmappe aus Microsoft 365.</p>
+      <section class="proof-strip" aria-label="Unterstützte Arbeitsweisen">
+        <span>Lokale .xlsx-Dateien</span>
+        <i aria-hidden="true"></i>
+        <span>OneDrive for Business</span>
+        <i aria-hidden="true"></i>
+        <span>SharePoint</span>
+        <i aria-hidden="true"></i>
+        <span>Microsoft Excel für Mac</span>
+      </section>
+
+      <section class="section intro-section" id="vorteile" aria-labelledby="benefits-title">
+        <div class="section-heading">
+          <p class="eyebrow">FÜR WIEDERKEHRENDE PROZESSE</p>
+          <h2 id="benefits-title">Das Formular vor der Tabelle.</h2>
+          <p>Teams bleiben in ihrer gewohnten Excel-Welt. Excely reduziert nur den Teil, der Zeit kostet und Fehler produziert: die tägliche Dateneingabe.</p>
+        </div>
+        <div class="benefit-grid">
+          <article class="feature-card accent-blue">
+            <span class="feature-number">01</span>
+            <h3>Konsequent strukturiert</h3>
+            <p>Ordne Excel-Spalten passenden Text-, Zahlen-, Datums-, Auswahl- oder Timerfeldern zu. Mitarbeitende sehen nur, was sie für den Eintrag brauchen.</p>
           </article>
-          <article>
-            <span>2</span>
-            <h3>Felder zuordnen</h3>
-            <p>Wähle Tabellenblatt, Excel-Spalten und passende Eingabetypen wie Text, Zahl, Datum, Auswahl oder Timer.</p>
+          <article class="feature-card accent-violet">
+            <span class="feature-number">02</span>
+            <h3>Sicher geschrieben</h3>
+            <p>Excely bestimmt die freie Zeile bei jedem Speichern neu, liest das Ergebnis zurück und meldet Erfolg erst nach vollständiger Prüfung.</p>
           </article>
-          <article>
-            <span>3</span>
-            <h3>Eintrag speichern</h3>
-            <p>Excely findet vor dem Speichern die erste vollständig freie Zeile und prüft den geschriebenen Eintrag.</p>
+          <article class="feature-card accent-cyan">
+            <span class="feature-number">03</span>
+            <h3>Schnell im Arbeitsalltag</h3>
+            <p>Profile, Tastaturkürzel, Timer und optionale intelligente Eingabe verkürzen Routinearbeit – von der Zeiterfassung bis zur Auftragsliste.</p>
           </article>
         </div>
       </section>
 
-      <section class="support-card" aria-labelledby="support-title">
-        <div>
-          <p class="eyebrow">BRAUCHST DU HILFE?</p>
-          <h2 id="support-title">Wir helfen gern weiter.</h2>
-          <p>Bitte beschreibe kurz dein Anliegen, deine Excely-Version und macOS-Version. Keine Excel-Dateien oder Zugangsdaten per E-Mail senden.</p>
+      <section class="section workflow-showcase" aria-labelledby="use-cases-title">
+        <div class="workflow-copy">
+          <p class="eyebrow">EIN WERKZEUG, VIELE LISTEN</p>
+          <h2 id="use-cases-title">Passt sich dem Prozess an – nicht umgekehrt.</h2>
+          <p>Für jede Arbeitsmappe entsteht ein eigenes Eingabeprofil. Tabellenblatt, Kopfzeile, Zielspalten und Validierung bleiben nachvollziehbar konfiguriert.</p>
+          <ul class="check-list">
+            <li>Projekt- und Zeiterfassung</li>
+            <li>Auftrags- und Einsatzdokumentation</li>
+            <li>Inventar- und Prüflisten</li>
+            <li>Vertriebs- und Kontaktdaten</li>
+          </ul>
         </div>
-        <a class="button secondary" href="mailto:marc-hager@outlook.com?subject=Excely%20Support">marc-hager@outlook.com</a>
+        <div class="mapping-panel" aria-label="Beispiel einer Feldzuordnung">
+          <div class="mapping-header">
+            <div><span>PROFIL</span><strong>Auftragserfassung</strong></div>
+            <span class="connected">Excel verbunden</span>
+          </div>
+          <div class="mapping-row"><span class="field-icon blue">A</span><div><strong>Kunde</strong><small>Text · Pflichtfeld</small></div><span>Spalte A</span></div>
+          <div class="mapping-row"><span class="field-icon violet">D</span><div><strong>Lieferdatum</strong><small>Datum</small></div><span>Spalte C</span></div>
+          <div class="mapping-row"><span class="field-icon cyan">#</span><div><strong>Menge</strong><small>Zahl · größer als 0</small></div><span>Spalte D</span></div>
+          <div class="mapping-row"><span class="field-icon green">✓</span><div><strong>Status</strong><small>Auswahlliste</small></div><span>Spalte F</span></div>
+        </div>
+      </section>
+
+      <section class="security-section" id="sicherheit" aria-labelledby="security-title">
+        <div class="security-heading">
+          <p class="eyebrow light">DATENKONTROLLE</p>
+          <h2 id="security-title">Ihre Arbeitsmappen bleiben Ihre Arbeitsmappen.</h2>
+          <p>Excely betreibt keinen eigenen Cloud-Dienst. Die App enthält keine Werbung, keine Analyse-SDKs und kein Tracking.</p>
+        </div>
+        <div class="security-grid">
+          <article>
+            <span class="security-icon" aria-hidden="true">⌂</span>
+            <h3>Lokal gespeichert</h3>
+            <p>Profile, Einstellungen und Sicherungskopien verbleiben auf dem jeweiligen Mac.</p>
+          </article>
+          <article>
+            <span class="security-icon" aria-hidden="true">↗</span>
+            <h3>Direkt zu Microsoft 365</h3>
+            <p>Cloud-Arbeitsmappen werden direkt über Microsoft Graph gelesen und aktualisiert.</p>
+          </article>
+          <article>
+            <span class="security-icon" aria-hidden="true">◇</span>
+            <h3>Geschützte Nachweise</h3>
+            <p>Anmeldenachweise und bestätigte Einträge liegen geschützt im macOS-Schlüsselbund.</p>
+          </article>
+        </div>
+        <a class="security-link" href="datenschutz.html">Datenschutz im Detail <span aria-hidden="true">→</span></a>
+      </section>
+
+      <section class="section steps-section" id="ablauf" aria-labelledby="steps-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">SCHNELL EINGERICHTET</p>
+          <h2 id="steps-title">In drei Schritten zur sauberen Eingabe.</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <span>1</span>
+            <div><h3>Arbeitsmappe verbinden</h3><p>Lokale .xlsx-Datei auswählen oder mit einem Microsoft-365-Geschäfts- oder Schulkonto anmelden.</p></div>
+          </li>
+          <li>
+            <span>2</span>
+            <div><h3>Profil konfigurieren</h3><p>Tabellenblatt, Kopfzeile, Spalten, Feldtypen und gewünschte Prüfungen festlegen.</p></div>
+          </li>
+          <li>
+            <span>3</span>
+            <div><h3>Einträge erfassen</h3><p>Formular ausfüllen, speichern und den von Excely verifizierten Eintrag direkt in Excel weiterverwenden.</p></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="requirements" aria-labelledby="requirements-title">
+        <div>
+          <p class="eyebrow">VORAUSSETZUNGEN</p>
+          <h2 id="requirements-title">Gemacht für den Mac.</h2>
+        </div>
+        <ul>
+          <li><strong>macOS 14+</strong><span>Für alle Kernfunktionen</span></li>
+          <li><strong>Microsoft Excel</strong><span>Für lokale Schreibvorgänge</span></li>
+          <li><strong>Microsoft 365</strong><span>Geschäfts- oder Schulkonto für Cloud-Dateien</span></li>
+          <li><strong>Apple Intelligence</strong><span>Optional für Smart Fill und Textfunktionen</span></li>
+        </ul>
+      </section>
+
+      <section class="contact-card" id="support" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow light">EXCELY FÜR IHR TEAM</p>
+          <h2 id="contact-title">Excel darf einfach bleiben.</h2>
+          <p>Sie möchten Excely in einem konkreten Prozess einsetzen oder die Verfügbarkeit erfahren? Beschreiben Sie kurz Ihren Anwendungsfall.</p>
+        </div>
+        <a class="button light-button" href="mailto:marc-hager@outlook.com?subject=Excely%20f%C3%BCr%20unser%20Team">Anfrage senden</a>
       </section>
     </main>
 
     <footer>
-      <span>© 2026 Marc Hager · Excely</span>
-      <a href="datenschutz.html">Datenschutz</a>
+      <a class="brand footer-brand" href="./" aria-label="Excely Startseite">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>Excely</span>
+      </a>
+      <p>Strukturierte Excel-Eingaben für Mac-Teams.</p>
+      <div class="footer-links">
+        <a href="#support">Kontakt</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+      <span class="copyright">© 2026 Marc Hager</span>
     </footer>
   </body>
 </html>
